@@ -20,7 +20,7 @@ const CreatePage = () => {
   return (
     <Container maxW={"container.sm"}>
         <VStack spacing={8}>
-            <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8}>
+            <Heading as={"h1"} size={"2xl"} textAlign={"center"} mb={8}>
                 Create a new product
             </Heading>
             <Box 
@@ -28,22 +28,20 @@ const CreatePage = () => {
                 p={6} rounded={"lg"} shadow={"md"}
             >
                 <VStack spacing={4}>
-                    <Input
-                        type="text"
+                    <Input                        
                         placeholder="Product Name"
                         name="name"
                         value={newProduct.name}
                         onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
                         />
-                    <Input
-                        type="text"
+                    <Input                        
                         placeholder="Product Price"
                         name="price"
+                        type="number"
                         value={newProduct.price}
                         onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
                         />
-                    <Input
-                        type="text"
+                    <Input                        
                         placeholder="Product Image URL"
                         name="image"    
                         value={newProduct.image}
