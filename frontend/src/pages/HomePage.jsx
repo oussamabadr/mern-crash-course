@@ -10,7 +10,7 @@ const HomePage = () => {
 	useEffect(() => {
 		fetchProducts();
 	}, [fetchProducts]);
-	console.log("products", products);
+	// console.log("products", products);
 
 	return (
 		<Container maxW='container.xl' py={12}>
@@ -26,13 +26,8 @@ const HomePage = () => {
 				</Text>
 
 				<SimpleGrid
-					columns={{
-						base: 1,
-						md: 2,
-						lg: 3,
-					}}
-					spacing={10}
-					w={"full"}
+					minChildWidth="sm" gap="40px"					
+					
 				>
 					{products.map((product) => (
 						<ProductCard key={product._id} product={product} />

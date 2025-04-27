@@ -23,7 +23,7 @@ const Navbar = () => {
         }}
     >
         <Text 
-            fontSize={{ base: "22", sm: "28" }} 
+            textStyle="5xl" 
             fontWeight={"bold"}
             textTransform={"uppercase"}
             textAlign={"center"}
