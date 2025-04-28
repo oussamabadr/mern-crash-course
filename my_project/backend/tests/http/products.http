@@ -1,0 +1,27 @@
+### Create a new product
+POST http://localhost:5000/api/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Smart watch 3",
+    "price": "399.99",
+    "image": "https://example.com/smart-watch.jpg"
+}
+
+### Delete a product
+DELETE http://localhost:5000/api/products/6809783b65c58faa8eaea54e HTTP/1.1
+Accept: application/json
+
+### Get all products
+GET http://localhost:5000/api/products HTTP/1.1
+Accept: application/json
+
+### Update a product
+PUT http://localhost:5000/api/products/68097bba5535ede74f4aa25b HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Smart watch 1",
+    "price": "999.99",
+    "image": "https://example.com/smart-watch1.jpg"
+}
